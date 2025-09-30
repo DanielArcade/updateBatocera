@@ -1,5 +1,4 @@
-
-
+#!/bin/bash
 sudo cp "/home/arcade/key/attract_key.key" "/home/arcade"
 
 sleep 1
@@ -10,6 +9,6 @@ sleep 1
 # Limpa a lixeira (pasta do Trash — opcional, mas cuidado ao usar)
 [ -d /home/arcade/.local/share/Trash ] && sudo rm -rf /home/arcade/.local/share/Trash
 
-# Mensagem de confirmação
-dialog --infobox "✅ Ativado com sucesso!" 5 40
-sleep 2
+# (NÃO mostra mensagem aqui — a interface SDL vai cuidar da barra)
+exit 0
+
